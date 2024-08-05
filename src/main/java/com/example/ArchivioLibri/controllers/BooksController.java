@@ -61,7 +61,7 @@ public class BooksController {
     @DeleteMapping("/{isbn}")
     public ResponseEntity<String> deleteByIsbn(@PathVariable String isbn) {
         booksService.deleteById(isbn);
-        return new ResponseEntity<>("Book deleted from list", HttpStatus.OK);
+        return new ResponseEntity<>("Libro eliminato", HttpStatus.OK);
     }
 
 
